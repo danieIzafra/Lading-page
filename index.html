@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumière | Hair Couture</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <nav class="glass">
+        <div class="logo">Lumière<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#collection">Coleção</a></li>
+            <li><a href="#transformations">Antes & Depois</a></li>
+        </ul>
+        <button class="btn-primary open-modal">Agendar Visita</button>
+    </nav>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <span class="tagline">Sua essência, nossa arte</span>
+            <h1>Desperte a sua versão mais <span class="text-gradient">radiante</span></h1>
+            <p>Onde a sofisticação encontra a naturalidade. Uma experiência exclusiva de beleza e autoestima.</p>
+            <button class="btn-outline open-modal">Inicie sua Jornada</button>
+        </div>
+        
+        <div class="hero-visuals">
+            <div class="glass-frame float-slow">
+                <img src="hair/imgt8.png" alt="Ondas Caramelo Luxo">
+            </div>
+            <div class="glass-frame float-fast secondary-img">
+                <img src="hair/imgt9.png" alt="Loiro Mel Polido">
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="section-pad">
+        <div class="section-header">
+            <h2>Nossa Assinatura</h2>
+            <div class="separator"></div>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="card glass">
+                <div class="img-box"><img src="hair/img1.jpg" alt="Butterfly Cut"></div>
+                <div class="info"><h3>Butterfly Cut</h3></div>
+            </div>
+            <div class="card glass">
+                <div class="img-box"><img src="hair/img2.jpg" alt="Golden Balayage"></div>
+                <div class="info"><h3>Golden Balayage</h3></div>
+            </div>
+            <div class="card glass">
+                <div class="img-box"><img src="hair/img4.jpeg" alt="Deep V-Cut"></div>
+                <div class="info"><h3>Deep V-Cut</h3></div>
+            </div>
+            <div class="card glass">
+                <div class="img-box"><img src="hair/img5.jpg" alt="HD Curls"></div>
+                <div class="info"><h3>HD Curls</h3></div>
+            </div>
+            <div class="card glass">
+                <div class="img-box"><img src="hair/img6.jpg" alt="Classic Bob"></div>
+                <div class="info"><h3>Classic Bob</h3></div>
+            </div>
+            <div class="card glass">
+                <div class="img-box"><img src="hair/img7.jpg" alt="Natural Waves"></div>
+                <div class="info"><h3>Natural Waves</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="transformations" class="section-pad">
+        <div class="section-header">
+            <h2>Transformações Reais</h2>
+            <p>Resultados que empoderam</p>
+        </div>
+
+        <div class="comparison-container">
+            <div class="comparison-frame glass">
+                <div class="frame-border"></div>
+                <img src="hair/imgad10.jpg" alt="Transformação 1">
+                <span class="badge">Conceito</span>
+            </div>
+
+            <div class="comparison-frame glass">
+                <div class="frame-border"></div>
+                <img src="hair/imgad11.png" alt="Transformação 2">
+                <span class="badge">Resultado</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Lumière Hair Couture.</p>
+    </footer>
+
+    <div id="booking-modal" class="modal-overlay">
+        <div class="modal-content glass">
+            <span class="close-btn">&times;</span>
+            
+            <div class="modal-header">
+                <h3>Agende seu Momento</h3>
+                <p>Selecione o horário ideal para sua consultoria.</p>
+            </div>
+
+            <div class="time-grid" id="time-slots">
+                </div>
+
+            <button id="confirm-btn" class="btn-primary" disabled>Confirmar Horário</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
