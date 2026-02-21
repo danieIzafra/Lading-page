@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaqueta Onyx Techwear | AURA</title>
+    
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Jaqueta Onyx Techwear | AURA">
+    <meta property="og:description" content="Armadura urbana em Nylon Balístico. Repelente à água e corta-vento. Primeira troca grátis.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:url" content="https://aura-studios.com/produto.html">
+    <meta property="product:price:amount" content="1250.00">
+    <meta property="product:price:currency" content="BRL">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Jaqueta Onyx Techwear",
+      "image": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&q=80&w=1000",
+      "description": "Corte oversized impecável unido à máxima utilidade. Desenvolvida com tecido tecnológico de alta gramatura.",
+      "brand": {
+        "@type": "Brand",
+        "name": "AURA Studios"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://aura-studios.com/produto.html",
+        "priceCurrency": "BRL",
+        "price": "1250.00",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-mode"> 
+    
+    <div class="bg-noise"></div>
+    <div class="glow-orb neon-top"></div>
+    <div class="glow-orb blue-bottom"></div>
+
+    <nav id="navbar" class="scrolled"> 
+        <div class="nav-container">
+            <a href="index.html" class="logo">AURA.</a>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Início</a></li>
+                <li><a href="index.html#colecao">Drops</a></li>
+                <li><a href="index.html#depoimentos">O Clã</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="theme-icon" id="theme-toggle" title="Alternar Tema"><i class="fas fa-moon"></i></div>
+                <div class="cart-icon" id="open-cart-btn" title="Sacola">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-count">0</span>
+                </div>
+                <div class="menu-toggle" id="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h2>Sua Curadoria</h2>
+            <button id="close-cart-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Total</span><span id="cart-total-price">R$ 0,00</span></div>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="size-modal">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h3>Guia de Medidas</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <table class="size-table">
+                    <tr><th>Tamanho</th><th>Tórax (cm)</th><th>Comprimento (cm)</th></tr>
+                    <tr><td>P</td><td>54</td><td>70</td></tr>
+                    <tr><td>M</td><td>56</td><td>72</td></tr>
+                    <tr><td>G</td><td>58</td><td>74</td></tr>
+                    <tr><td>GG</td><td>60</td><td>76</td></tr>
+                </table>
+                <p class="modal-note">*As medidas podem variar em até 2cm.</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="product-page reveal active">
+        <div class="breadcrumb">
+            <a href="index.html">Início</a> / <a href="index.html#colecao">Outerwear</a> / <span>Jaqueta Onyx Techwear</span>
+        </div>
+
+        <div class="product-container">
+            <div class="product-gallery">
+                <div class="thumbnail-list">
+                    <img class="thumb active" src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&q=80&w=200" alt="Thumb 1">
+                    <img class="thumb" src="https://images.unsplash.com/photo-1520975954732-57dd22299614?auto=format&fit=crop&q=80&w=200" alt="Thumb 2">
+                    <img class="thumb" src="https://images.unsplash.com/photo-1544022613-e87ca7cebb6c?auto=format&fit=crop&q=80&w=200" alt="Thumb 3">
+                </div>
+                <div class="main-image zoom-container" id="zoom-container">
+                    <img id="current-image" src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&q=80&w=1000" alt="Jaqueta Techwear Onyx">
+                </div>
+            </div>
+
+            <div class="product-details sticky-panel">
+                <div class="title-block">
+                    <span class="tag-limited">Tiragem Limitada</span>
+                    <h1>JAQUETA ONYX TECHWEAR</h1>
+                    <div class="price-wrapper">
+                        <p class="price">R$ 1.250</p>
+                        <div class="price-details">
+                            <span class="pix-price">R$ 1.125 no PIX (10% OFF)</span>
+                            <span class="installments">ou 10x de R$ 125,00 sem juros</span>
+                        </div>
+                    </div>
+                    <div class="scarcity-badge">
+                        <i class="fas fa-fire"></i> 12 pessoas compraram nas últimas 24h
+                    </div>
+                </div>
+
+                <div class="fit-guide-visual glass-panel">
+                    <span class="fit-label">Silhueta:</span>
+                    <div class="fit-scale">
+                        <div class="fit-step">Slim</div>
+                        <div class="fit-step">Regular</div>
+                        <div class="fit-step active">Oversized</div>
+                    </div>
+                </div>
+
+                <div class="trust-badges-top">
+                    <span><i class="fas fa-credit-card"></i> Em até 10x sem juros</span>
+                    <span><i class="fas fa-truck-fast"></i> Entrega Expressa</span>
+                </div>
+
+                <div class="size-selector">
+                    <div class="size-header">
+                        <span>Selecione o Tamanho</span>
+                        <button type="button" class="size-guide-btn" id="open-size-guide"><i class="fas fa-ruler-combined"></i> Guia de Medidas</button>
+                    </div>
+                    <div class="size-buttons">
+                        <button class="size-btn">P</button>
+                        <button class="size-btn active">M</button>
+                        <button class="size-btn">G</button>
+                        <button class="size-btn out-of-stock" disabled>GG</button>
+                    </div>
+                </div>
+
+                <div class="purchase-actions">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" id="qty-input" value="1" min="1" max="5" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn-large" id="add-product-btn" 
+                            data-name="Jaqueta Techwear Onyx" 
+                            data-price="1250" 
+                            data-img="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&q=80&w=200">
+                        Adicionar à Sacola
+                    </button>
+                    <button class="favorite-btn" aria-label="Favoritar"><i class="far fa-heart"></i></button>
+                </div>
+
+                <div class="shipping-calculator">
+                    <label for="cep">Calcular Frete e Prazo</label>
+                    <div class="shipping-input-group glass-panel">
+                        <input type="text" id="cep" placeholder="00000-000" maxlength="9">
+                        <button type="button">OK</button>
+                    </div>
+                </div>
+
+                <div class="info-accordions">
+                    <div class="accordion-item glass-panel active">
+                        <div class="accordion-header">
+                            <h4>Especificações Técnicas</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="tech-spec-grid">
+                                <div class="tech-item"><i class="fas fa-droplet"></i><span>Nylon Balístico Repelente</span></div>
+                                <div class="tech-item"><i class="fas fa-weight-hanging"></i><span>Heavyweight 450 GSM</span></div>
+                                <div class="tech-item"><i class="fas fa-wind"></i><span>Corta-Vento Selado</span></div>
+                                <div class="tech-item"><i class="fas fa-layer-group"></i><span>Zíperes YKK AquaGuard®</span></div>
+                                <div class="tech-item"><i class="fas fa-microscope"></i><span>100% Poliamida Balística</span></div>
+                                <div class="tech-item"><i class="fas fa-hands-bubbles"></i><span>Lavagem a seco ou ciclo delicado</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item glass-panel">
+                        <div class="accordion-header">
+                            <h4>Descrição</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Corte oversized impecável unido à máxima utilidade. Desenvolvida com tecido tecnológico de alta gramatura, resistente à água e ao vento. Uma curadoria de design brutalista pensada para suportar a selva de concreto com atitude inquestionável.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item glass-panel">
+                        <div class="accordion-header">
+                            <h4>Trocas e Devoluções</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Garantimos a qualidade do nosso ofício. Se a peça não vestir perfeitamente, a <strong>primeira troca é 100% por nossa conta</strong> dentro de 7 dias após o recebimento. Solicite a logística reversa direto pelo nosso painel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="the-craft reveal dark-bg-section">
+        <div class="craft-container">
+            <div class="craft-text">
+                <h2>O OFÍCIO.</h2>
+                <p>Nossa abordagem ao design não aceita atalhos. A Jaqueta Onyx é resultado de 12 meses de prototipagem, testada nas ruas e finalizada com costuras triplamente reforçadas. Não é apenas uma peça de roupa, é uma armadura urbana projetada para durar uma vida inteira.</p>
+            </div>
+            <div class="craft-image img-container">
+                <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&q=80&w=800" alt="Detalhe do tecido e costura">
+            </div>
+        </div>
+    </section>
+
+    <section class="video-lookbook reveal">
+        <div class="video-placeholder">
+            <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&q=80&w=1600" alt="Lookbook em movimento">
+            <div class="play-btn"><i class="fas fa-play"></i></div>
+            <div class="video-overlay-text">AURA. MOVEMENT</div>
+        </div>
+    </section>
+
+    <section class="styled-by-you reveal">
+        <div class="section-header center">
+            <h2>STYLED BY YOU</h2>
+            <p>O Clã AURA em ação. Marque @AURA.STUDIOS para aparecer aqui.</p>
+        </div>
+        <div class="ugc-grid">
+            <div class="ugc-item"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=400" alt="UGC 1"><div class="ugc-handle">@marcos_t</div></div>
+            <div class="ugc-item"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=400" alt="UGC 2"><div class="ugc-handle">@dz.urban</div></div>
+            <div class="ugc-item"><img src="https://images.unsplash.com/photo-1492446845049-9c50cc313f00?auto=format&fit=crop&q=80&w=400" alt="UGC 3"><div class="ugc-handle">@felipe.r_</div></div>
+            <div class="ugc-item"><img src="https://images.unsplash.com/photo-1523398002811-999aa8d9512e?auto=format&fit=crop&q=80&w=400" alt="UGC 4"><div class="ugc-handle">@street.k</div></div>
+        </div>
+    </section>
+
+    <section class="reviews-section reveal">
+        <div class="section-header center">
+            <h2>O QUE O CLÃ DIZ</h2>
+        </div>
+        <div class="overall-rating">
+            <span class="score">5.0</span>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <span style="color: var(--text-muted);">(24 Avaliações)</span>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card glass-panel">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=100" class="reviewer-avatar" alt="Cliente">
+                    <div>
+                        <strong>Daniel Z.</strong><span class="verified-badge"><i class="fas fa-check-circle"></i> Comprador Verificado</span>
+                        <div class="stars" style="font-size: 0.8rem; margin-top: 5px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+                <p>"Caimento perfeito. O nylon balístico realmente segura o vento e a chuva. Uso direto para andar de moto e a jaqueta não decepciona."</p>
+            </div>
+            <div class="review-card glass-panel">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=100" class="reviewer-avatar" alt="Cliente">
+                    <div>
+                        <strong>Lucas M.</strong><span class="verified-badge"><i class="fas fa-check-circle"></i> Comprador Verificado</span>
+                        <div class="stars" style="font-size: 0.8rem; margin-top: 5px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+                <p>"A qualidade dos zíperes YKK faz muita diferença. Compra absurda, recomendo pegar o tamanho exato da tabela de medidas."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cross-sell-section reveal dark-bg-section">
+        <div class="section-header center">
+            <h2>COMPLETE O LOOK</h2>
+            <p>Sinergia perfeita para a Jaqueta Onyx.</p>
+        </div>
+        <div class="product-grid split-grid">
+            <div class="product-card glass-panel">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=500" alt="Sneakers">
+                </div>
+                <div class="product-info">
+                    <h3>Sneaker AURA X-1</h3>
+                    <span class="price">R$ 980</span>
+                </div>
+            </div>
+            <div class="product-card glass-panel">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&q=80&w=500" alt="Óculos">
+                </div>
+                <div class="product-info">
+                    <h3>Óculos Cyberpunk</h3>
+                    <span class="price">R$ 450</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">AURA.</div>
+            <p class="copyright">&copy; 2026 AURA Studios. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="mobile-floating-buy glass-panel" id="mobile-floating-buy">
+        <div class="floating-info">
+            <span class="floating-name">Jaqueta Onyx</span>
+            <span class="floating-price">R$ 1.250</span>
+        </div>
+        <button class="add-to-cart-btn-large" id="floating-add-btn">Adicionar</button>
+    </div>
+
+    <div id="toast-notification" class="toast">
+        <i class="fas fa-check-circle"></i> Adicionado à curadoria
+    </div>
+
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="produto.js"></script>
+</body>
+</html>
